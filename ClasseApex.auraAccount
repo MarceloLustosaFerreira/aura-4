@@ -1,0 +1,10 @@
+public class AccountAura {
+    @AuraEnabled
+    
+    Public static List<Account> accountsNR(){
+        
+        return[Select Name, Andamento__c, Rating FROM Account
+              Where Rating = 'Hot'];
+    }
+
+}
